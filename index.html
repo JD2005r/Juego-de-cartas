@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cartas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Juego de Cartas</h1>
+
+    <!-- Zona secreta invisible para activar el truco -->
+    <div id="secretZone"></div>
+
+    <div class="container">
+        <div class="player-area" id="player1-area">
+            <h2 id="player1-title">Jugador 1</h2>
+            <p id="player1-status">Esperando tu elección...</p>
+            <p id="playerCard"></p>
+            <button id="pickPlayer1Card">Elegir Carta Jugador 1</button>
+        </div>
+
+        <div class="player-area" id="player2-area">
+            <h2 id="player2-title">Jugador 2</h2>
+            <p id="player2-status">Esperando tu elección...</p>
+            <p id="systemCard"></p>
+            <button id="pickPlayer2Card" disabled>Elegir Carta Jugador 2</button>
+        </div>
+    </div>
+
+    <p id="result"></p>
+
+    <button id="resetButton" style="display: none;">Reiniciar Juego</button>
+
+    <script src="juego.js"></script>
+</body>
+</html>
